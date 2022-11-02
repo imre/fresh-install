@@ -1,5 +1,17 @@
 # Fresh Install on a new Mac
 
+## Firefox
+![Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
+
+Density: Compact  |
+![Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
+
+Extensions:
+  - uBlock Origin
+  - I don't care about cookies
+  - Panorama Tab Group
+  - Momentum
+
 ## HomeBrew:
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
@@ -22,11 +34,6 @@ brew install
 Modifier Keys: 🌐 / fn Key ➡ ^ Control Key
 
 Text Input: 🇬🇧 British - PC
-
-## Firefox
-
-Density: Compact  |
-![Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 
 ## Sublime Text 4:
 Theme:
