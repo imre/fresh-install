@@ -3,35 +3,41 @@
 ## HomeBrew:
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
+brew install
+  - htop
+  - kitty
+  - jetbrains-toolbox
+  - postman
+  - spotify
+  - rectangle
+  - sublime-text
+  - vlc
+  - slack
+
+## XCode
+![Download Link](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## System Preferences:
 ### Keyboard:
-Modifier Keys Globe -> Control
+Modifier Keys: 🌐 / fn Key ➡ ^ Control Key
 
-Text Input: British - PC
+Text Input: 🇬🇧 British - PC
 
 ## Firefox
 
-Density: Compact
-
-https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox
+Density: Compact  |
+![Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 
 ## Sublime Text 4:
 Theme:
 
-cmd + shift + p: Install Package
-
-ayu
-
-Color Scheme: ayu-dark
-
-Color Theme: ayu-mirage
+- Press: ⌘ + ⬆️ + 🅿️: Install Package
+- ayu
+- Color Scheme: ayu-dark
+- Color Theme: ayu-mirage
 
 ## Generate SSH Key:
-`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-
-**enter**
-
-**enter**
-
-`pbcopy < ~/.ssh/id_rsa.pub # Copies the contents of the id_rsa.pub file to your clipboard`
+- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+- **enter**
+- **enter**
+- `pbcopy < ~/.ssh/id_rsa.pub # Copies the contents of the id_rsa.pub file to your clipboard`
