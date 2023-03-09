@@ -31,7 +31,7 @@ brew install
 
 ## System Preferences:
 ### Keyboard:
-Modifier Keys: 🌐 / fn Key ➡ ^ Control Key
+Modifier Keys: 🌐 (fn) Key ➡ ^ Control Key
 
 Text Input: 🇬🇧 British - PC
 
@@ -47,4 +47,5 @@ Theme:
 - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 - **enter**
 - **enter**
-- `pbcopy < ~/.ssh/id_rsa.pub # Copies the contents of the id_rsa.pub file to your clipboard`
+- `pbcopy < ~/.ssh/id_rsa.pub`  
+   Copies the contents of the id_rsa.pub file to your clipboard
