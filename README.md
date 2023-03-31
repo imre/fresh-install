@@ -49,3 +49,25 @@ Theme:
 - **enter**
 - `pbcopy < ~/.ssh/id_rsa.pub`  
    Copies the contents of the id_rsa.pub file to your clipboard
+
+
+## Tips
+
+### If Kitty's font on oh-my-zsh isn't working properly, try installing `Powerline Fonts` manually:
+
+- 1. Clone the repository
+	```
+	git clone git@github.com:powerline/fonts.git
+	```
+	```
+	cd fonts/
+	```
+- 2. Install the fonts
+	```
+	./install.sh
+	```
+- 3. Refresh the font cache, saves logging
+	```
+	sudo fc-cache -fv
+	```
+- 4. Restart Kitty
