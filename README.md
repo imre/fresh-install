@@ -1,10 +1,10 @@
 # Fresh Install on a new Mac
 
 ## Firefox
-![Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
+[Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
 
 Density: Compact  |
-![Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
+[Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 
 Extensions:
   - uBlock Origin
@@ -32,7 +32,7 @@ brew install \
    slack \
 ```
 ## XCode
-![Download Link](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+[Download Link](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## System Preferences:
 ### Keyboard:
