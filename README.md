@@ -3,7 +3,7 @@
 ## Firefox
 [Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
 
-### Density: Compact  |
+### Density: Compact  
 [Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 
 ### Bookmarks open in new tab
