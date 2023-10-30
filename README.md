@@ -3,14 +3,14 @@
 ## Firefox
 [Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
 
-# Density: Compact  |
+### Density: Compact  |
 [Walkthrough Guide](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 
-# Bookmarks open in new tab
+### Bookmarks open in new tab
 [Walkthrough Guide](https://support.mozilla.org/en-US/questions/1207970)
 
 
-# Extensions:
+### Extensions:
   - uBlock Origin
   - I don't care about cookies
   - Panorama Tab Group
