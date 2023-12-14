@@ -154,3 +154,24 @@ echo one of the values to make sure source worked
 $ az login
 
 5. terraform apply
+
+
+## Delete file from git history in repo
+
+### Make a backup of your repo first!!!!!!!!!!!!!!!!
+
+1. Download https://rtyley.github.io/bfg-repo-cleaner/
+
+2. Run `git clone --mirror git@github://your.repo/`
+
+3. Run `bfg --delete-files filename reponame.git`
+
+4. Run `cd reponame` NOT THE .GIT ONE!
+
+5. Run `git reflog expire --expire=now --all && git gc --prune=now --aggressive`
+
+6. DONE
+
+### Have everyone delete the repo and clone the new one
+
+
