@@ -54,6 +54,16 @@ Theme:
 - Color Scheme: ayu-dark
 - Color Theme: ayu-mirage
 
+## Set Up GitHub profile to your machine
+
+```
+git config --global user.name "notimre"
+```
+
+```
+git config user.email "your_email@abc.example"
+```
+
 ## Generate SSH Key:
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
