@@ -76,6 +76,14 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 ## Tips
 
+### Declare Standard Encryption for App Store Connect
+
+Add this to `Info.plist`
+```
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+```
+
 ### If Kitty's font on oh-my-zsh isn't working properly, try installing `Powerline Fonts` manually:
 
 - 1. Clone the repository
@@ -129,7 +137,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 ## Deploying a brand new project on azure
 
-1. create a terraform .env file
+1. Create a terraform .env file
 
 ```
 export TF_VAR_subscription_id=""
@@ -151,19 +159,21 @@ export TF_VAR_sentry_dsn=""
 
 2.
 
+```
 $ export .env
-
+```
+```
 $ source .env
-
+```
 echo one of the values to make sure source worked
 
-3. terrafrom init --> should run correctly
+3. `terrafrom init` --> should run correctly
 
 4. Log in to azure
-
+```
 $ az login
-
-5. terraform apply
+```
+5. ```terraform apply```
 
 
 ## Delete file from git history in repo
