@@ -74,6 +74,7 @@ Copy the contents of the id_rsa.pub file to your clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 ```  
 
+<!--Courtesy of: https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e -->
 How to Setup Verified Commits
 =============================
 
@@ -179,6 +180,8 @@ To tell git to automatically sign commits you can set:
 ```
 $ git config --global commit.gpgsign true
 ```
+
+<!-- End of Reference-->
 
 ## Tips
 
