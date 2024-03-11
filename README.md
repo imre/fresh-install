@@ -1,5 +1,6 @@
 # Fresh Install on a new Mac
 
+
 ## Firefox
 [Download Browser](https://www.mozilla.org/en-GB/firefox/new/)
 
