@@ -74,6 +74,111 @@ Copy the contents of the id_rsa.pub file to your clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 ```  
 
+How to Setup Verified Commits
+=============================
+
+Quick guide on how to setup git signing. Information is aggregated from
+following sources:
+
+* <https://help.github.com/articles/signing-commits/>
+* <https://help.github.com/articles/telling-git-about-your-signing-key/>
+* <https://help.github.com/articles/generating-a-new-gpg-key/>
+* <https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/>
+
+Creating GPG Keys
+-----------------
+
+1. First, generate a GPG key pair. Your GPG key must use RSA with a key size of
+   4096 bits.
+
+```
+$ gpg --full-generate-key
+```
+
+2. At the prompt, specify the kind of key you want, or press Enter to accept the
+   default RSA and RSA.
+3. Enter the desired key size. We recommend the maximum key size of `4096`.
+4. Enter the length of time the key should be valid. Press Enter to specify the
+   default selection, indicating that the key doesn't expire.
+5. Verify that your selections are correct.
+6. Enter your user ID information.
+
+> When asked to enter your email address, ensure that you enter the verified
+> email address for your GitHub account. To keep your email address private,
+> use your GitHub-provided no-reply email address. For more information, see
+> "Verifying your email address" and "About commit email addresses."
+
+
+7. Type a secure passphrase.
+8. Use the `gpg --list-secret-keys --keyid-format LONG` command to list GPG keys
+   for which you have both a public and private key. A private key is required
+   for signing commits or tags. From the list of GPG keys, copy the GPG key ID
+   you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
+
+```
+$ gpg --list-secret-keys --keyid-format LONG
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot
+ssb   4096R/42B317FD4BA89E7A 2016-03-10
+```
+
+9. Paste the text below, substituting in the GPG key ID you'd like to use. In
+   this example, the GPG key ID is `3AA5C34371567BD2`:
+
+```
+$ gpg --armor --export 3AA5C34371567BD2
+# Prints the GPG key ID, in ASCII armor format
+```
+
+10. Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----`
+    and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
+
+Adding a new GPG key to your GitHub account
+-------------------------------------------
+
+1. In the upper-right corner of any page, click your profile photo, then click
+   Settings.
+2. In the user settings sidebar, click SSH and GPG keys.
+3. Click New GPG key.
+4. In the "Key" field, paste the GPG key you copied when you generated your GPG
+   key.
+5. Click Add GPG key.
+6. To confirm the action, enter your GitHub password.
+
+Getting GPG Keys
+----------------
+
+1. Open Git Bash
+2. Use the `gpg --list-secret-keys --keyid-format LONG` command to list GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
+3. From the list of GPG keys, copy the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
+
+```
+$ gpg --list-secret-keys --keyid-format LONG
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot
+ssb   4096R/42B317FD4BA89E7A 2016-03-10
+```
+
+Git Settings
+------------
+
+To set your GPG signing key in Git, paste the text below, substituting in the
+GPG key ID you'd like to use. In this example, the GPG key ID is
+`3AA5C34371567BD2`:
+
+```
+$ git config --global user.signingkey 3AA5C34371567BD2
+```
+
+To tell git to automatically sign commits you can set:
+
+```
+$ git config --global commit.gpgsign true
+```
 
 ## Tips
 
