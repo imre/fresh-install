@@ -1,4 +1,4 @@
-# Fresh Install on a new Mac
+#  Fresh Install on a new Mac
 
 
 ## Firefox
