@@ -183,6 +183,14 @@ $ git config --global commit.gpgsign true
 
 <!-- End of Reference-->
 
+Misc
+------------
+
+Install `pinentry-mac` to avoid entering your passphrase repeatedly:
+```bash
+brew install pinentry-mac
+```
+
 ## Tips
 
 ### Declare Standard Encryption for App Store Connect
